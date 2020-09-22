@@ -1,0 +1,1871 @@
+{
+	"info": {
+		"_postman_id": "9aa69d02-bce5-55d1-19dc-3bc6e64762e5",
+		"name": "DP5 Remote API Calls",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "System",
+			"item": [
+				{
+					"name": "DP5 version",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8777/dp5/remote/v1/system/version",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8777",
+							"path": [
+								"dp5",
+								"remote",
+								"v1",
+								"system",
+								"version"
+							]
+						},
+						"description": "Fetch the DP5 version and build number"
+					},
+					"response": [
+						{
+							"name": "DP5 version",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8777/dp5/remote/v1/system/version",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8777",
+									"path": [
+										"dp5",
+										"remote",
+										"v1",
+										"system",
+										"version"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 16 Sep 2020 12:39:12 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"version\": \"ZZZZ.XXXX\"\n}"
+						}
+					]
+				},
+				{
+					"name": "DP5 status",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8777/dp5/remote/v1/system/status",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8777",
+							"path": [
+								"dp5",
+								"remote",
+								"v1",
+								"system",
+								"status"
+							]
+						},
+						"description": "Return the DP5 status"
+					},
+					"response": [
+						{
+							"name": "DP5 status",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8777/dp5/remote/v1/system/status",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8777",
+									"path": [
+										"dp5",
+										"remote",
+										"v1",
+										"system",
+										"status"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 16 Sep 2020 12:40:29 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"IDLE\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Shutdown DP5 remote",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8777/dp5/remote/v1/system/shutdown",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8777",
+							"path": [
+								"dp5",
+								"remote",
+								"v1",
+								"system",
+								"shutdown"
+							]
+						},
+						"description": "Shutdown the DP5 headless"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Licence",
+			"item": [
+				{
+					"name": "Get DP5 Licence",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8777/dp5/remote/v1/licence",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8777",
+							"path": [
+								"dp5",
+								"remote",
+								"v1",
+								"licence"
+							]
+						},
+						"description": "Fetch licence details for DP5"
+					},
+					"response": [
+						{
+							"name": "Get DP5 Licence",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8777/dp5/remote/v1/licence",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8777",
+									"path": [
+										"dp5",
+										"remote",
+										"v1",
+										"licence"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 16 Sep 2020 12:45:05 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"version\": \"\",\n    \"originalName\": \"Jini\",\n    \"originalCompany\": \"Ziath\",\n    \"numDaysValid\": -1,\n    \"product\": \"Datapaq5\",\n    \"key\": \"ZMTOCQQO\",\n    \"serial\": \"jefp\",\n    \"active\": true,\n    \"siteLicence\": false,\n    \"message\": null,\n    \"numActiveRegistrations\": 1,\n    \"maxActiveRegistrations\": 3,\n    \"trial\": false,\n    \"seller\": \"Ziath\",\n    \"acoustix\": false,\n    \"dp5version\": \"NETWORK\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Linear",
+			"item": [
+				{
+					"name": "Get linear reader status",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8777/dp5/remote/v1/1dr2/status",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8777",
+							"path": [
+								"dp5",
+								"remote",
+								"v1",
+								"1dr2",
+								"status"
+							]
+						},
+						"description": "Fetch the linear reader status(the value returned are string value from enum LinearReaderStatus)"
+					},
+					"response": [
+						{
+							"name": "Get linear reader status",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8777/dp5/remote/v1/1dr2/status",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8777",
+									"path": [
+										"dp5",
+										"remote",
+										"v1",
+										"1dr2",
+										"status"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 16 Sep 2020 12:46:54 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"CONNECTED\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Linear Reader Scan data",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8777/dp5/remote/v1/1dr2/scan?image=false",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8777",
+							"path": [
+								"dp5",
+								"remote",
+								"v1",
+								"1dr2",
+								"scan"
+							],
+							"query": [
+								{
+									"key": "image",
+									"value": "false"
+								}
+							]
+						},
+						"description": "Fetch the linear reader scan result such as barcode and the image used to decode barcode"
+					},
+					"response": [
+						{
+							"name": "Get Linear Reader Scan data",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8777/dp5/remote/v1/1dr2/scan?image=false",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8777",
+									"path": [
+										"dp5",
+										"remote",
+										"v1",
+										"1dr2",
+										"scan"
+									],
+									"query": [
+										{
+											"key": "image",
+											"value": "false"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 16 Sep 2020 12:59:40 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"barcode\": \"LVL100074983\",\n    \"image\": null,\n    \"success\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Image from Linear Reader",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8777/dp5/remote/v1/1dr2/frame",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8777",
+							"path": [
+								"dp5",
+								"remote",
+								"v1",
+								"1dr2",
+								"frame"
+							]
+						},
+						"description": "Fetch the image frame from the connected Ziath Linear reader"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Scan",
+			"item": [
+				{
+					"name": "Get Rack scan data",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8777/dp5/remote/v1/scan?container_uid=mirage96sbs&raw_image=false&annotated_image=false&linear_image=false",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8777",
+							"path": [
+								"dp5",
+								"remote",
+								"v1",
+								"scan"
+							],
+							"query": [
+								{
+									"key": "container_uid",
+									"value": "mirage96sbs"
+								},
+								{
+									"key": "raw_image",
+									"value": "false",
+									"description": "If the raw image used for scan is required (default is false)"
+								},
+								{
+									"key": "annotated_image",
+									"value": "false",
+									"description": "If the annotated image used for scan decode is required (default is false)"
+								},
+								{
+									"key": "linear_image",
+									"value": "false",
+									"description": "If the linear reader image for the container is required (default is false)"
+								}
+							]
+						},
+						"description": "Fetch the data for the rack scan that is placed on the scanner for the container unique id provided.\nImages like raw, annotated and linear images can be fetched based on the flag provided."
+					},
+					"response": [
+						{
+							"name": "Get Rack scan data",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8777/dp5/remote/v1/scan?container_uid=mirage96sbs&raw_image=false&annotated_image=false&linear_image=false",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8777",
+									"path": [
+										"dp5",
+										"remote",
+										"v1",
+										"scan"
+									],
+									"query": [
+										{
+											"key": "container_uid",
+											"value": "mirage96sbs"
+										},
+										{
+											"key": "raw_image",
+											"value": "false",
+											"description": "If the raw image used for scan is required (default is false)"
+										},
+										{
+											"key": "annotated_image",
+											"value": "false",
+											"description": "If the annotated image used for scan decode is required (default is false)"
+										},
+										{
+											"key": "linear_image",
+											"value": "false",
+											"description": "If the linear reader image for the container is required (default is false)"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 16 Sep 2020 13:04:30 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"scanId\": \"66b45849-019e-4e5c-af3f-a0bd4138a975\",\n    \"scanTime\": 1600261470488,\n    \"containerBarcode\": \"LVL100074983\",\n    \"tubeBarcode\": [\n        {\n            \"row\": 1,\n            \"column\": 1,\n            \"barcode\": null,\n            \"x\": 2892,\n            \"y\": 437,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 1,\n            \"column\": 2,\n            \"barcode\": null,\n            \"x\": 2665,\n            \"y\": 437,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 1,\n            \"column\": 3,\n            \"barcode\": null,\n            \"x\": 2437,\n            \"y\": 437,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 1,\n            \"column\": 4,\n            \"barcode\": null,\n            \"x\": 2210,\n            \"y\": 437,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 1,\n            \"column\": 5,\n            \"barcode\": null,\n            \"x\": 1982,\n            \"y\": 437,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 1,\n            \"column\": 6,\n            \"barcode\": null,\n            \"x\": 1755,\n            \"y\": 437,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 1,\n            \"column\": 7,\n            \"barcode\": null,\n            \"x\": 1527,\n            \"y\": 437,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 1,\n            \"column\": 8,\n            \"barcode\": null,\n            \"x\": 1300,\n            \"y\": 437,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 1,\n            \"column\": 9,\n            \"barcode\": null,\n            \"x\": 1072,\n            \"y\": 437,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 1,\n            \"column\": 10,\n            \"barcode\": null,\n            \"x\": 845,\n            \"y\": 437,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 1,\n            \"column\": 11,\n            \"barcode\": null,\n            \"x\": 617,\n            \"y\": 437,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 1,\n            \"column\": 12,\n            \"barcode\": null,\n            \"x\": 390,\n            \"y\": 437,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 2,\n            \"column\": 1,\n            \"barcode\": null,\n            \"x\": 2892,\n            \"y\": 664,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 2,\n            \"column\": 2,\n            \"barcode\": null,\n            \"x\": 2665,\n            \"y\": 664,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 2,\n            \"column\": 3,\n            \"barcode\": null,\n            \"x\": 2437,\n            \"y\": 664,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 2,\n            \"column\": 4,\n            \"barcode\": null,\n            \"x\": 2210,\n            \"y\": 664,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 2,\n            \"column\": 5,\n            \"barcode\": null,\n            \"x\": 1982,\n            \"y\": 664,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 2,\n            \"column\": 6,\n            \"barcode\": null,\n            \"x\": 1755,\n            \"y\": 664,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 2,\n            \"column\": 7,\n            \"barcode\": null,\n            \"x\": 1527,\n            \"y\": 664,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 2,\n            \"column\": 8,\n            \"barcode\": null,\n            \"x\": 1300,\n            \"y\": 664,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 2,\n            \"column\": 9,\n            \"barcode\": null,\n            \"x\": 1072,\n            \"y\": 664,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 2,\n            \"column\": 10,\n            \"barcode\": null,\n            \"x\": 845,\n            \"y\": 664,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 2,\n            \"column\": 11,\n            \"barcode\": null,\n            \"x\": 617,\n            \"y\": 664,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 2,\n            \"column\": 12,\n            \"barcode\": null,\n            \"x\": 390,\n            \"y\": 664,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 3,\n            \"column\": 1,\n            \"barcode\": null,\n            \"x\": 2892,\n            \"y\": 892,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 3,\n            \"column\": 2,\n            \"barcode\": null,\n            \"x\": 2665,\n            \"y\": 892,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 3,\n            \"column\": 3,\n            \"barcode\": null,\n            \"x\": 2437,\n            \"y\": 892,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 3,\n            \"column\": 4,\n            \"barcode\": null,\n            \"x\": 2210,\n            \"y\": 892,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 3,\n            \"column\": 5,\n            \"barcode\": null,\n            \"x\": 1982,\n            \"y\": 892,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 3,\n            \"column\": 6,\n            \"barcode\": null,\n            \"x\": 1755,\n            \"y\": 892,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 3,\n            \"column\": 7,\n            \"barcode\": null,\n            \"x\": 1527,\n            \"y\": 892,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 3,\n            \"column\": 8,\n            \"barcode\": null,\n            \"x\": 1300,\n            \"y\": 892,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 3,\n            \"column\": 9,\n            \"barcode\": null,\n            \"x\": 1072,\n            \"y\": 892,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 3,\n            \"column\": 10,\n            \"barcode\": null,\n            \"x\": 845,\n            \"y\": 892,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 3,\n            \"column\": 11,\n            \"barcode\": null,\n            \"x\": 617,\n            \"y\": 892,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 3,\n            \"column\": 12,\n            \"barcode\": null,\n            \"x\": 390,\n            \"y\": 892,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 4,\n            \"column\": 1,\n            \"barcode\": null,\n            \"x\": 2892,\n            \"y\": 1119,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 4,\n            \"column\": 2,\n            \"barcode\": null,\n            \"x\": 2665,\n            \"y\": 1119,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 4,\n            \"column\": 3,\n            \"barcode\": null,\n            \"x\": 2437,\n            \"y\": 1119,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 4,\n            \"column\": 4,\n            \"barcode\": null,\n            \"x\": 2210,\n            \"y\": 1119,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 4,\n            \"column\": 5,\n            \"barcode\": null,\n            \"x\": 1982,\n            \"y\": 1119,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 4,\n            \"column\": 6,\n            \"barcode\": null,\n            \"x\": 1755,\n            \"y\": 1119,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 4,\n            \"column\": 7,\n            \"barcode\": null,\n            \"x\": 1527,\n            \"y\": 1119,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 4,\n            \"column\": 8,\n            \"barcode\": null,\n            \"x\": 1300,\n            \"y\": 1119,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 4,\n            \"column\": 9,\n            \"barcode\": null,\n            \"x\": 1072,\n            \"y\": 1119,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 4,\n            \"column\": 10,\n            \"barcode\": null,\n            \"x\": 845,\n            \"y\": 1119,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 4,\n            \"column\": 11,\n            \"barcode\": null,\n            \"x\": 617,\n            \"y\": 1119,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 4,\n            \"column\": 12,\n            \"barcode\": null,\n            \"x\": 390,\n            \"y\": 1119,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 5,\n            \"column\": 1,\n            \"barcode\": null,\n            \"x\": 2892,\n            \"y\": 1347,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 5,\n            \"column\": 2,\n            \"barcode\": null,\n            \"x\": 2665,\n            \"y\": 1347,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 5,\n            \"column\": 3,\n            \"barcode\": null,\n            \"x\": 2437,\n            \"y\": 1347,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 5,\n            \"column\": 4,\n            \"barcode\": null,\n            \"x\": 2210,\n            \"y\": 1347,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 5,\n            \"column\": 5,\n            \"barcode\": null,\n            \"x\": 1982,\n            \"y\": 1347,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 5,\n            \"column\": 6,\n            \"barcode\": null,\n            \"x\": 1755,\n            \"y\": 1347,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 5,\n            \"column\": 7,\n            \"barcode\": null,\n            \"x\": 1527,\n            \"y\": 1347,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 5,\n            \"column\": 8,\n            \"barcode\": null,\n            \"x\": 1300,\n            \"y\": 1347,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 5,\n            \"column\": 9,\n            \"barcode\": null,\n            \"x\": 1072,\n            \"y\": 1347,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 5,\n            \"column\": 10,\n            \"barcode\": null,\n            \"x\": 845,\n            \"y\": 1347,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 5,\n            \"column\": 11,\n            \"barcode\": null,\n            \"x\": 617,\n            \"y\": 1347,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 5,\n            \"column\": 12,\n            \"barcode\": null,\n            \"x\": 390,\n            \"y\": 1347,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 6,\n            \"column\": 1,\n            \"barcode\": null,\n            \"x\": 2892,\n            \"y\": 1574,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 6,\n            \"column\": 2,\n            \"barcode\": null,\n            \"x\": 2665,\n            \"y\": 1574,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 6,\n            \"column\": 3,\n            \"barcode\": null,\n            \"x\": 2437,\n            \"y\": 1574,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 6,\n            \"column\": 4,\n            \"barcode\": null,\n            \"x\": 2210,\n            \"y\": 1574,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 6,\n            \"column\": 5,\n            \"barcode\": null,\n            \"x\": 1982,\n            \"y\": 1574,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 6,\n            \"column\": 6,\n            \"barcode\": null,\n            \"x\": 1755,\n            \"y\": 1574,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 6,\n            \"column\": 7,\n            \"barcode\": null,\n            \"x\": 1527,\n            \"y\": 1574,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 6,\n            \"column\": 8,\n            \"barcode\": null,\n            \"x\": 1300,\n            \"y\": 1574,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 6,\n            \"column\": 9,\n            \"barcode\": null,\n            \"x\": 1072,\n            \"y\": 1574,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 6,\n            \"column\": 10,\n            \"barcode\": null,\n            \"x\": 845,\n            \"y\": 1574,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 6,\n            \"column\": 11,\n            \"barcode\": null,\n            \"x\": 617,\n            \"y\": 1574,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 6,\n            \"column\": 12,\n            \"barcode\": null,\n            \"x\": 390,\n            \"y\": 1574,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 7,\n            \"column\": 1,\n            \"barcode\": null,\n            \"x\": 2892,\n            \"y\": 1802,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 7,\n            \"column\": 2,\n            \"barcode\": null,\n            \"x\": 2665,\n            \"y\": 1802,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 7,\n            \"column\": 3,\n            \"barcode\": null,\n            \"x\": 2437,\n            \"y\": 1802,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 7,\n            \"column\": 4,\n            \"barcode\": null,\n            \"x\": 2210,\n            \"y\": 1802,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 7,\n            \"column\": 5,\n            \"barcode\": null,\n            \"x\": 1982,\n            \"y\": 1802,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 7,\n            \"column\": 6,\n            \"barcode\": null,\n            \"x\": 1755,\n            \"y\": 1802,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 7,\n            \"column\": 7,\n            \"barcode\": null,\n            \"x\": 1527,\n            \"y\": 1802,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 7,\n            \"column\": 8,\n            \"barcode\": null,\n            \"x\": 1300,\n            \"y\": 1802,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 7,\n            \"column\": 9,\n            \"barcode\": null,\n            \"x\": 1072,\n            \"y\": 1802,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 7,\n            \"column\": 10,\n            \"barcode\": null,\n            \"x\": 845,\n            \"y\": 1802,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 7,\n            \"column\": 11,\n            \"barcode\": null,\n            \"x\": 617,\n            \"y\": 1802,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 7,\n            \"column\": 12,\n            \"barcode\": null,\n            \"x\": 390,\n            \"y\": 1802,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 8,\n            \"column\": 1,\n            \"barcode\": null,\n            \"x\": 2892,\n            \"y\": 2029,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 8,\n            \"column\": 2,\n            \"barcode\": null,\n            \"x\": 2665,\n            \"y\": 2029,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 8,\n            \"column\": 3,\n            \"barcode\": null,\n            \"x\": 2437,\n            \"y\": 2029,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 8,\n            \"column\": 4,\n            \"barcode\": null,\n            \"x\": 2210,\n            \"y\": 2029,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 8,\n            \"column\": 5,\n            \"barcode\": null,\n            \"x\": 1982,\n            \"y\": 2029,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 8,\n            \"column\": 6,\n            \"barcode\": null,\n            \"x\": 1755,\n            \"y\": 2029,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 8,\n            \"column\": 7,\n            \"barcode\": null,\n            \"x\": 1527,\n            \"y\": 2029,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 8,\n            \"column\": 8,\n            \"barcode\": null,\n            \"x\": 1300,\n            \"y\": 2029,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 8,\n            \"column\": 9,\n            \"barcode\": null,\n            \"x\": 1072,\n            \"y\": 2029,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 8,\n            \"column\": 10,\n            \"barcode\": null,\n            \"x\": 845,\n            \"y\": 2029,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 8,\n            \"column\": 11,\n            \"barcode\": null,\n            \"x\": 617,\n            \"y\": 2029,\n            \"decodeStatus\": \"EMPTY\"\n        },\n        {\n            \"row\": 8,\n            \"column\": 12,\n            \"barcode\": null,\n            \"x\": 390,\n            \"y\": 2029,\n            \"decodeStatus\": \"EMPTY\"\n        }\n    ],\n    \"orientationBarcode\": [],\n    \"scanTimeAnswer\": null,\n    \"containerName\": \"96 SBS rack\",\n    \"containerUid\": \"mirage96sbs\",\n    \"demoImage\": null,\n    \"containerGuid\": \"0743fa9a-3c9c-425f-9783-cc243d798cc1\",\n    \"rawImage\": null,\n    \"annotatedImage\": null,\n    \"linearReaderImage\": null\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Containers",
+			"item": [
+				{
+					"name": "Fetch DP5 container detail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8777/dp5/remote/v1/containers/cube96sbs",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8777",
+							"path": [
+								"dp5",
+								"remote",
+								"v1",
+								"containers",
+								"cube96sbs"
+							]
+						},
+						"description": "get the container detail based on the container uid given"
+					},
+					"response": []
+				},
+				{
+					"name": "Get all containers configured in DP5",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8777/dp5/remote/v1/containers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8777",
+							"path": [
+								"dp5",
+								"remote",
+								"v1",
+								"containers"
+							]
+						},
+						"description": "Fetch all the containers available DP5 "
+					},
+					"response": [
+						{
+							"name": "Get all containers configured in DP5",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8777/dp5/remote/v1/containers",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8777",
+									"path": [
+										"dp5",
+										"remote",
+										"v1",
+										"containers"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 16 Sep 2020 13:17:33 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"containerGuid\": \"f987c7cb-aa0f-4c7c-a27a-9f8e4ddc34eb\",\n        \"name\": \"96 SBS rack\",\n        \"uid\": \"cube96sbs\",\n        \"scannerType\": \"CUBE\",\n        \"demoImage\": null,\n        \"automatic\": false,\n        \"containerType\": \"SBS96\",\n        \"scannerGuid\": \"e81d9d71-71e0-47dc-819b-b3084e8b3fb7\"\n    },\n    {\n        \"containerGuid\": \"0743fa9a-3c9c-425f-9783-cc243d798cc1\",\n        \"name\": \"96 SBS rack\",\n        \"uid\": \"mirage96sbs\",\n        \"scannerType\": \"MIRAGE\",\n        \"demoImage\": null,\n        \"automatic\": false,\n        \"containerType\": \"SBS96\",\n        \"scannerGuid\": \"8b4690e6-b367-45c6-a3f6-f855b39783b2\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get default containers avaiable for scanner",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8777/dp5/remote/v1/containers/defaults?scanner_type=CUBE",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8777",
+							"path": [
+								"dp5",
+								"remote",
+								"v1",
+								"containers",
+								"defaults"
+							],
+							"query": [
+								{
+									"key": "scanner_type",
+									"value": "CUBE"
+								}
+							]
+						},
+						"description": "Get all container types available in DP5 for the given scanner type"
+					},
+					"response": [
+						{
+							"name": "Get default containers avaiable for scanner",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8777/dp5/remote/v1/containers/defaults?scanner_type=CUBE",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8777",
+									"path": [
+										"dp5",
+										"remote",
+										"v1",
+										"containers",
+										"defaults"
+									],
+									"query": [
+										{
+											"key": "scanner_type",
+											"value": "CUBE"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 16 Sep 2020 13:22:31 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    \"SBS240\",\n    \"SBS48STAR\",\n    \"AUTOMATIC\",\n    \"SBS96\",\n    \"BOX196\",\n    \"STAR138\",\n    \"BOX81\",\n    \"SBS24\",\n    \"BOX100\",\n    \"SBS384KBR\",\n    \"SBS48\",\n    \"SBS384THERMO\"\n]"
+						}
+					]
+				},
+				{
+					"name": "Adding a container DP5",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8777/dp5/remote/v1/containers?scanner_guid=e81d9d71-71e0-47dc-819b-b3084e8b3fb7&container_name=96 SBS rack 123&container_uid=cube96sbs1234&container_type=SBS96",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8777",
+							"path": [
+								"dp5",
+								"remote",
+								"v1",
+								"containers"
+							],
+							"query": [
+								{
+									"key": "scanner_guid",
+									"value": "e81d9d71-71e0-47dc-819b-b3084e8b3fb7",
+									"description": "Scanner guid which can be fetched from the Scanners endpoint and get all scanner details"
+								},
+								{
+									"key": "container_name",
+									"value": "96 SBS rack 123"
+								},
+								{
+									"key": "container_uid",
+									"value": "cube96sbs1234"
+								},
+								{
+									"key": "container_type",
+									"value": "SBS96",
+									"description": "this value can be received from the default container types for the scanner you are adding the container too"
+								}
+							]
+						},
+						"description": "Adding a container to a specific scanner in DP5 with the key value parameters like, container name, container unique id and the container type.\n\n"
+					},
+					"response": [
+						{
+							"name": "Adding a container DP5",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8777/dp5/remote/v1/containers?scanner_guid=e81d9d71-71e0-47dc-819b-b3084e8b3fb7&container_name=96 SBS rack 123&container_uid=cube96sbs1234&container_type=SBS96",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8777",
+									"path": [
+										"dp5",
+										"remote",
+										"v1",
+										"containers"
+									],
+									"query": [
+										{
+											"key": "scanner_guid",
+											"value": "e81d9d71-71e0-47dc-819b-b3084e8b3fb7"
+										},
+										{
+											"key": "container_name",
+											"value": "96 SBS rack 123"
+										},
+										{
+											"key": "container_uid",
+											"value": "cube96sbs1234"
+										},
+										{
+											"key": "container_type",
+											"value": "SBS96"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Set-Cookie",
+									"value": "JSESSIONID=B823E0545AC69078D9375057C7A096AC; Path=/; HttpOnly"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 16 Sep 2020 13:27:32 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"containerGuid\": \"50d07846-6f42-495f-baf2-37fe5f59af7d\",\n    \"name\": \"96 SBS rack 123\",\n    \"uid\": \"cube96sbs1234\",\n    \"scannerType\": \"CUBE\",\n    \"demoImage\": null,\n    \"automatic\": false,\n    \"containerType\": \"SBS96\",\n    \"scannerGuid\": \"e81d9d71-71e0-47dc-819b-b3084e8b3fb7\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Adding a container using rack template",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/xml",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<container automatic=\"false\" defaultContainer=\"SBS96\" guid=\"\" name=\"96 SBS rack j\" numberOfCols=\"12\" numberOfRows=\"8\" uid=\"cubeV296sbs fthe\">\n    <decodeProcessors>\n        <decodeProcessor decode=\"FAST\">\n            <imageProcessors>\n                <imageProcessor methodName=\"RUN_DECODE\">\n                    <parameters/>\n                </imageProcessor>\n            </imageProcessors>\n            <parameters/>\n        </decodeProcessor>\n        <decodeProcessor decode=\"DEEP\">\n            <imageProcessors>\n                <imageProcessor methodName=\"RUN_DECODE\">\n                    <parameters/>\n                </imageProcessor>\n            </imageProcessors>\n            <parameters>\n                <entry>\n                    <key>BARCODE_RELATIVE_SIZE</key>\n                    <value>1</value>\n                </entry>\n            </parameters>\n        </decodeProcessor>\n    </decodeProcessors>\n    <locations>\n        <location row=\"1\" column=\"1\" x=\"370\" y=\"435\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"1\" column=\"2\" x=\"370\" y=\"630\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"1\" column=\"3\" x=\"370\" y=\"825\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"1\" column=\"4\" x=\"370\" y=\"1020\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"1\" column=\"5\" x=\"370\" y=\"1215\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"1\" column=\"6\" x=\"370\" y=\"1410\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"1\" column=\"7\" x=\"370\" y=\"1605\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"1\" column=\"8\" x=\"370\" y=\"1800\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"1\" column=\"9\" x=\"370\" y=\"1995\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"1\" column=\"10\" x=\"370\" y=\"2190\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"1\" column=\"11\" x=\"370\" y=\"2385\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"1\" column=\"12\" x=\"370\" y=\"2580\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"2\" column=\"1\" x=\"565\" y=\"435\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"2\" column=\"2\" x=\"565\" y=\"630\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"2\" column=\"3\" x=\"565\" y=\"825\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"2\" column=\"4\" x=\"565\" y=\"1020\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"2\" column=\"5\" x=\"565\" y=\"1215\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"2\" column=\"6\" x=\"565\" y=\"1410\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"2\" column=\"7\" x=\"565\" y=\"1605\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"2\" column=\"8\" x=\"565\" y=\"1800\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"2\" column=\"9\" x=\"565\" y=\"1995\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"2\" column=\"10\" x=\"565\" y=\"2190\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"2\" column=\"11\" x=\"565\" y=\"2385\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"2\" column=\"12\" x=\"565\" y=\"2580\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"3\" column=\"1\" x=\"760\" y=\"435\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"3\" column=\"2\" x=\"760\" y=\"630\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"3\" column=\"3\" x=\"760\" y=\"825\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"3\" column=\"4\" x=\"760\" y=\"1020\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"3\" column=\"5\" x=\"760\" y=\"1215\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"3\" column=\"6\" x=\"760\" y=\"1410\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"3\" column=\"7\" x=\"760\" y=\"1605\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"3\" column=\"8\" x=\"760\" y=\"1800\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"3\" column=\"9\" x=\"760\" y=\"1995\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"3\" column=\"10\" x=\"760\" y=\"2190\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"3\" column=\"11\" x=\"760\" y=\"2385\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"3\" column=\"12\" x=\"760\" y=\"2580\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"4\" column=\"1\" x=\"955\" y=\"435\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"4\" column=\"2\" x=\"955\" y=\"630\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"4\" column=\"3\" x=\"955\" y=\"825\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"4\" column=\"4\" x=\"955\" y=\"1020\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"4\" column=\"5\" x=\"955\" y=\"1215\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"4\" column=\"6\" x=\"955\" y=\"1410\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"4\" column=\"7\" x=\"955\" y=\"1605\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"4\" column=\"8\" x=\"955\" y=\"1800\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"4\" column=\"9\" x=\"955\" y=\"1995\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"4\" column=\"10\" x=\"955\" y=\"2190\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"4\" column=\"11\" x=\"955\" y=\"2385\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"4\" column=\"12\" x=\"955\" y=\"2580\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"5\" column=\"1\" x=\"1150\" y=\"435\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"5\" column=\"2\" x=\"1150\" y=\"630\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"5\" column=\"3\" x=\"1150\" y=\"825\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"5\" column=\"4\" x=\"1150\" y=\"1020\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"5\" column=\"5\" x=\"1150\" y=\"1215\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"5\" column=\"6\" x=\"1150\" y=\"1410\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"5\" column=\"7\" x=\"1150\" y=\"1605\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"5\" column=\"8\" x=\"1150\" y=\"1800\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"5\" column=\"9\" x=\"1150\" y=\"1995\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"5\" column=\"10\" x=\"1150\" y=\"2190\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"5\" column=\"11\" x=\"1150\" y=\"2385\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"5\" column=\"12\" x=\"1150\" y=\"2580\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"6\" column=\"1\" x=\"1345\" y=\"435\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"6\" column=\"2\" x=\"1345\" y=\"630\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"6\" column=\"3\" x=\"1345\" y=\"825\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"6\" column=\"4\" x=\"1345\" y=\"1020\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"6\" column=\"5\" x=\"1345\" y=\"1215\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"6\" column=\"6\" x=\"1345\" y=\"1410\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"6\" column=\"7\" x=\"1345\" y=\"1605\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"6\" column=\"8\" x=\"1345\" y=\"1800\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"6\" column=\"9\" x=\"1345\" y=\"1995\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"6\" column=\"10\" x=\"1345\" y=\"2190\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"6\" column=\"11\" x=\"1345\" y=\"2385\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"6\" column=\"12\" x=\"1345\" y=\"2580\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"7\" column=\"1\" x=\"1540\" y=\"435\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"7\" column=\"2\" x=\"1540\" y=\"630\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"7\" column=\"3\" x=\"1540\" y=\"825\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"7\" column=\"4\" x=\"1540\" y=\"1020\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"7\" column=\"5\" x=\"1540\" y=\"1215\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"7\" column=\"6\" x=\"1540\" y=\"1410\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"7\" column=\"7\" x=\"1540\" y=\"1605\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"7\" column=\"8\" x=\"1540\" y=\"1800\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"7\" column=\"9\" x=\"1540\" y=\"1995\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"7\" column=\"10\" x=\"1540\" y=\"2190\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"7\" column=\"11\" x=\"1540\" y=\"2385\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"7\" column=\"12\" x=\"1540\" y=\"2580\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"8\" column=\"1\" x=\"1735\" y=\"435\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"8\" column=\"2\" x=\"1735\" y=\"630\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"8\" column=\"3\" x=\"1735\" y=\"825\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"8\" column=\"4\" x=\"1735\" y=\"1020\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"8\" column=\"5\" x=\"1735\" y=\"1215\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"8\" column=\"6\" x=\"1735\" y=\"1410\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"8\" column=\"7\" x=\"1735\" y=\"1605\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"8\" column=\"8\" x=\"1735\" y=\"1800\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"8\" column=\"9\" x=\"1735\" y=\"1995\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"8\" column=\"10\" x=\"1735\" y=\"2190\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"8\" column=\"11\" x=\"1735\" y=\"2385\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"8\" column=\"12\" x=\"1735\" y=\"2580\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n    </locations>\n    <orientationLocations>\n        <orientationLocation active=\"false\" row=\"0\" column=\"0\" x=\"370\" y=\"240\" cutoutSize=\"195.0\" visualisationSize=\"195.0\"/>\n        <orientationLocation active=\"false\" row=\"0\" column=\"0\" x=\"370\" y=\"2736\" cutoutSize=\"195.0\" visualisationSize=\"195.0\"/>\n        <orientationLocation active=\"false\" row=\"0\" column=\"0\" x=\"450\" y=\"279\" cutoutSize=\"195.0\" visualisationSize=\"195.0\"/>\n        <orientationLocation active=\"false\" row=\"0\" column=\"0\" x=\"487\" y=\"547\" cutoutSize=\"140.0\" visualisationSize=\"140.0\"/>\n        <orientationLocation active=\"false\" row=\"0\" column=\"0\" x=\"1052\" y=\"240\" cutoutSize=\"195.0\" visualisationSize=\"195.0\"/>\n        <orientationLocation active=\"false\" row=\"0\" column=\"0\" x=\"1052\" y=\"2775\" cutoutSize=\"195.0\" visualisationSize=\"195.0\"/>\n        <orientationLocation active=\"false\" row=\"0\" column=\"0\" x=\"1619\" y=\"2477\" cutoutSize=\"140.0\" visualisationSize=\"140.0\"/>\n        <orientationLocation active=\"false\" row=\"0\" column=\"0\" x=\"1655\" y=\"2736\" cutoutSize=\"195.0\" visualisationSize=\"195.0\"/>\n        <orientationLocation active=\"false\" row=\"0\" column=\"0\" x=\"1735\" y=\"279\" cutoutSize=\"195.0\" visualisationSize=\"195.0\"/>\n        <orientationLocation active=\"false\" row=\"0\" column=\"0\" x=\"1735\" y=\"2775\" cutoutSize=\"195.0\" visualisationSize=\"195.0\"/>\n    </orientationLocations>\n</container>\n"
+						},
+						"url": {
+							"raw": "http://localhost:8777/dp5/remote/v1/containers/from_template?scanner_guid=e81d9d71-71e0-47dc-819b-b3084e8b3fb7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8777",
+							"path": [
+								"dp5",
+								"remote",
+								"v1",
+								"containers",
+								"from_template"
+							],
+							"query": [
+								{
+									"key": "scanner_guid",
+									"value": "e81d9d71-71e0-47dc-819b-b3084e8b3fb7"
+								}
+							]
+						},
+						"description": "Adding a container directly to the scanner by the rack template, which is an XML file provided by Ziath or you get when you export an existing template from DP5 "
+					},
+					"response": [
+						{
+							"name": "Adding a container using rack template",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/xml",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<container automatic=\"false\" defaultContainer=\"SBS96\" guid=\"\" name=\"96 SBS rack j\" numberOfCols=\"12\" numberOfRows=\"8\" uid=\"cubeV296sbs fthe\">\n    <decodeProcessors>\n        <decodeProcessor decode=\"FAST\">\n            <imageProcessors>\n                <imageProcessor methodName=\"RUN_DECODE\">\n                    <parameters/>\n                </imageProcessor>\n            </imageProcessors>\n            <parameters/>\n        </decodeProcessor>\n        <decodeProcessor decode=\"DEEP\">\n            <imageProcessors>\n                <imageProcessor methodName=\"RUN_DECODE\">\n                    <parameters/>\n                </imageProcessor>\n            </imageProcessors>\n            <parameters>\n                <entry>\n                    <key>BARCODE_RELATIVE_SIZE</key>\n                    <value>1</value>\n                </entry>\n            </parameters>\n        </decodeProcessor>\n    </decodeProcessors>\n    <locations>\n        <location row=\"1\" column=\"1\" x=\"370\" y=\"435\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"1\" column=\"2\" x=\"370\" y=\"630\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"1\" column=\"3\" x=\"370\" y=\"825\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"1\" column=\"4\" x=\"370\" y=\"1020\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"1\" column=\"5\" x=\"370\" y=\"1215\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"1\" column=\"6\" x=\"370\" y=\"1410\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"1\" column=\"7\" x=\"370\" y=\"1605\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"1\" column=\"8\" x=\"370\" y=\"1800\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"1\" column=\"9\" x=\"370\" y=\"1995\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"1\" column=\"10\" x=\"370\" y=\"2190\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"1\" column=\"11\" x=\"370\" y=\"2385\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"1\" column=\"12\" x=\"370\" y=\"2580\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"2\" column=\"1\" x=\"565\" y=\"435\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"2\" column=\"2\" x=\"565\" y=\"630\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"2\" column=\"3\" x=\"565\" y=\"825\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"2\" column=\"4\" x=\"565\" y=\"1020\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"2\" column=\"5\" x=\"565\" y=\"1215\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"2\" column=\"6\" x=\"565\" y=\"1410\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"2\" column=\"7\" x=\"565\" y=\"1605\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"2\" column=\"8\" x=\"565\" y=\"1800\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"2\" column=\"9\" x=\"565\" y=\"1995\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"2\" column=\"10\" x=\"565\" y=\"2190\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"2\" column=\"11\" x=\"565\" y=\"2385\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"2\" column=\"12\" x=\"565\" y=\"2580\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"3\" column=\"1\" x=\"760\" y=\"435\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"3\" column=\"2\" x=\"760\" y=\"630\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"3\" column=\"3\" x=\"760\" y=\"825\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"3\" column=\"4\" x=\"760\" y=\"1020\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"3\" column=\"5\" x=\"760\" y=\"1215\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"3\" column=\"6\" x=\"760\" y=\"1410\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"3\" column=\"7\" x=\"760\" y=\"1605\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"3\" column=\"8\" x=\"760\" y=\"1800\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"3\" column=\"9\" x=\"760\" y=\"1995\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"3\" column=\"10\" x=\"760\" y=\"2190\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"3\" column=\"11\" x=\"760\" y=\"2385\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"3\" column=\"12\" x=\"760\" y=\"2580\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"4\" column=\"1\" x=\"955\" y=\"435\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"4\" column=\"2\" x=\"955\" y=\"630\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"4\" column=\"3\" x=\"955\" y=\"825\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"4\" column=\"4\" x=\"955\" y=\"1020\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"4\" column=\"5\" x=\"955\" y=\"1215\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"4\" column=\"6\" x=\"955\" y=\"1410\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"4\" column=\"7\" x=\"955\" y=\"1605\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"4\" column=\"8\" x=\"955\" y=\"1800\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"4\" column=\"9\" x=\"955\" y=\"1995\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"4\" column=\"10\" x=\"955\" y=\"2190\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"4\" column=\"11\" x=\"955\" y=\"2385\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"4\" column=\"12\" x=\"955\" y=\"2580\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"5\" column=\"1\" x=\"1150\" y=\"435\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"5\" column=\"2\" x=\"1150\" y=\"630\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"5\" column=\"3\" x=\"1150\" y=\"825\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"5\" column=\"4\" x=\"1150\" y=\"1020\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"5\" column=\"5\" x=\"1150\" y=\"1215\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"5\" column=\"6\" x=\"1150\" y=\"1410\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"5\" column=\"7\" x=\"1150\" y=\"1605\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"5\" column=\"8\" x=\"1150\" y=\"1800\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"5\" column=\"9\" x=\"1150\" y=\"1995\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"5\" column=\"10\" x=\"1150\" y=\"2190\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"5\" column=\"11\" x=\"1150\" y=\"2385\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"5\" column=\"12\" x=\"1150\" y=\"2580\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"6\" column=\"1\" x=\"1345\" y=\"435\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"6\" column=\"2\" x=\"1345\" y=\"630\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"6\" column=\"3\" x=\"1345\" y=\"825\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"6\" column=\"4\" x=\"1345\" y=\"1020\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"6\" column=\"5\" x=\"1345\" y=\"1215\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"6\" column=\"6\" x=\"1345\" y=\"1410\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"6\" column=\"7\" x=\"1345\" y=\"1605\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"6\" column=\"8\" x=\"1345\" y=\"1800\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"6\" column=\"9\" x=\"1345\" y=\"1995\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"6\" column=\"10\" x=\"1345\" y=\"2190\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"6\" column=\"11\" x=\"1345\" y=\"2385\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"6\" column=\"12\" x=\"1345\" y=\"2580\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"7\" column=\"1\" x=\"1540\" y=\"435\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"7\" column=\"2\" x=\"1540\" y=\"630\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"7\" column=\"3\" x=\"1540\" y=\"825\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"7\" column=\"4\" x=\"1540\" y=\"1020\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"7\" column=\"5\" x=\"1540\" y=\"1215\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"7\" column=\"6\" x=\"1540\" y=\"1410\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"7\" column=\"7\" x=\"1540\" y=\"1605\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"7\" column=\"8\" x=\"1540\" y=\"1800\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"7\" column=\"9\" x=\"1540\" y=\"1995\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"7\" column=\"10\" x=\"1540\" y=\"2190\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"7\" column=\"11\" x=\"1540\" y=\"2385\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"7\" column=\"12\" x=\"1540\" y=\"2580\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"8\" column=\"1\" x=\"1735\" y=\"435\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"8\" column=\"2\" x=\"1735\" y=\"630\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"8\" column=\"3\" x=\"1735\" y=\"825\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"8\" column=\"4\" x=\"1735\" y=\"1020\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"8\" column=\"5\" x=\"1735\" y=\"1215\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"8\" column=\"6\" x=\"1735\" y=\"1410\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"8\" column=\"7\" x=\"1735\" y=\"1605\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"8\" column=\"8\" x=\"1735\" y=\"1800\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"8\" column=\"9\" x=\"1735\" y=\"1995\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"8\" column=\"10\" x=\"1735\" y=\"2190\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"8\" column=\"11\" x=\"1735\" y=\"2385\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n        <location row=\"8\" column=\"12\" x=\"1735\" y=\"2580\" cutoutSize=\"164.0\" visualisationSize=\"150.0\"/>\n    </locations>\n    <orientationLocations>\n        <orientationLocation active=\"false\" row=\"0\" column=\"0\" x=\"370\" y=\"240\" cutoutSize=\"195.0\" visualisationSize=\"195.0\"/>\n        <orientationLocation active=\"false\" row=\"0\" column=\"0\" x=\"370\" y=\"2736\" cutoutSize=\"195.0\" visualisationSize=\"195.0\"/>\n        <orientationLocation active=\"false\" row=\"0\" column=\"0\" x=\"450\" y=\"279\" cutoutSize=\"195.0\" visualisationSize=\"195.0\"/>\n        <orientationLocation active=\"false\" row=\"0\" column=\"0\" x=\"487\" y=\"547\" cutoutSize=\"140.0\" visualisationSize=\"140.0\"/>\n        <orientationLocation active=\"false\" row=\"0\" column=\"0\" x=\"1052\" y=\"240\" cutoutSize=\"195.0\" visualisationSize=\"195.0\"/>\n        <orientationLocation active=\"false\" row=\"0\" column=\"0\" x=\"1052\" y=\"2775\" cutoutSize=\"195.0\" visualisationSize=\"195.0\"/>\n        <orientationLocation active=\"false\" row=\"0\" column=\"0\" x=\"1619\" y=\"2477\" cutoutSize=\"140.0\" visualisationSize=\"140.0\"/>\n        <orientationLocation active=\"false\" row=\"0\" column=\"0\" x=\"1655\" y=\"2736\" cutoutSize=\"195.0\" visualisationSize=\"195.0\"/>\n        <orientationLocation active=\"false\" row=\"0\" column=\"0\" x=\"1735\" y=\"279\" cutoutSize=\"195.0\" visualisationSize=\"195.0\"/>\n        <orientationLocation active=\"false\" row=\"0\" column=\"0\" x=\"1735\" y=\"2775\" cutoutSize=\"195.0\" visualisationSize=\"195.0\"/>\n    </orientationLocations>\n</container>\n"
+								},
+								"url": {
+									"raw": "http://localhost:8777/dp5/remote/v1/containers/from_template?scanner_guid=e81d9d71-71e0-47dc-819b-b3084e8b3fb7",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8777",
+									"path": [
+										"dp5",
+										"remote",
+										"v1",
+										"containers",
+										"from_template"
+									],
+									"query": [
+										{
+											"key": "scanner_guid",
+											"value": "e81d9d71-71e0-47dc-819b-b3084e8b3fb7"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 16 Sep 2020 13:31:58 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"containerGuid\": \"4e1b3647-7a0b-41db-8868-27d7ee81c3de\",\n    \"name\": \"96 SBS rack j\",\n    \"uid\": \"cubeV296sbs fthe\",\n    \"scannerType\": null,\n    \"demoImage\": null,\n    \"automatic\": false,\n    \"containerType\": \"SBS96\",\n    \"scannerGuid\": \"e81d9d71-71e0-47dc-819b-b3084e8b3fb7\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete a container from DP5",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8777/dp5/remote/v1/containers/cubeV296sbs fthe",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8777",
+							"path": [
+								"dp5",
+								"remote",
+								"v1",
+								"containers",
+								"cubeV296sbs fthe"
+							]
+						},
+						"description": "Delete an existing container from DP5"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Scanners",
+			"item": [
+				{
+					"name": "Get all configured scaners in DP5 without any parameter",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8777/dp5/remote/v1/scanners",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8777",
+							"path": [
+								"dp5",
+								"remote",
+								"v1",
+								"scanners"
+							]
+						},
+						"description": "Fetch all configured scaners in DP5"
+					},
+					"response": [
+						{
+							"name": "Get all configured scaners in DP5",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8777/dp5/remote/v1/scanners",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8777",
+									"path": [
+										"dp5",
+										"remote",
+										"v1",
+										"scanners"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 16 Sep 2020 13:35:57 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"scannerGuid\": \"105e6ded-98a1-4c6d-8e59-22bce2505359\",\n        \"scannerSerial\": \"\",\n        \"scannerName\": \"EXPRESS_TEST\",\n        \"scannerType\": \"EXPRESS\",\n        \"connections\": [\n            \"10.241.100.1\",\n            \"10.241.100.2\"\n        ],\n        \"configured\": true,\n        \"connected\": false\n    },\n    {\n        \"scannerGuid\": \"78aff8b7-61cc-4670-b0f9-e2edc7d08455\",\n        \"scannerSerial\": \"EXP0065\",\n        \"scannerName\": \"EXPRESS_TEST12\",\n        \"scannerType\": \"EXPRESS\",\n        \"connections\": [\n            \"10.241.105.2\",\n            \"10.241.107.2\"\n        ],\n        \"configured\": true,\n        \"connected\": false\n    },\n    {\n        \"scannerGuid\": \"e81d9d71-71e0-47dc-819b-b3084e8b3fb7\",\n        \"scannerSerial\": \"CubeDEV\",\n        \"scannerName\": \"CUBE_TEST\",\n        \"scannerType\": \"CUBE\",\n        \"connections\": [\n            \"10.243.100.1\",\n            \"10.243.101.1\"\n        ],\n        \"configured\": true,\n        \"connected\": false\n    },\n    {\n        \"scannerGuid\": \"8b4690e6-b367-45c6-a3f6-f855b39783b2\",\n        \"scannerSerial\": \"DevM0006\",\n        \"scannerName\": \"\",\n        \"scannerType\": \"MIRAGE\",\n        \"connections\": [\n            \"10.242.100.1\"\n        ],\n        \"configured\": true,\n        \"connected\": true\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get configured scanner based on filters",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8777/dp5/remote/v1/scanners?container_uid=cube96sbs1234&is_connected=false&scanner serial=CubeDEV&scanner_type=CUBE",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8777",
+							"path": [
+								"dp5",
+								"remote",
+								"v1",
+								"scanners"
+							],
+							"query": [
+								{
+									"key": "container_uid",
+									"value": "cube96sbs1234",
+									"description": "container id, to get the scanner for which the container is added,, default value is empty"
+								},
+								{
+									"key": "is_connected",
+									"value": "false",
+									"description": " if set true only return the container if it is currently connected,, default value is false"
+								},
+								{
+									"key": "scanner serial",
+									"value": "CubeDEV",
+									"description": "the scanner serial number, default value is empty"
+								},
+								{
+									"key": "scanner_type",
+									"value": "CUBE",
+									"description": "type of the scanner, default value is empty"
+								}
+							]
+						},
+						"description": "Fetch container/containers based on the parameter filters used"
+					},
+					"response": [
+						{
+							"name": "Get configured scanner based on filters",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8777/dp5/remote/v1/scanners?container_uid=cube96sbs1234&is_connected=false&scanner serial=CubeDEV&scanner_type=CUBE",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8777",
+									"path": [
+										"dp5",
+										"remote",
+										"v1",
+										"scanners"
+									],
+									"query": [
+										{
+											"key": "container_uid",
+											"value": "cube96sbs1234",
+											"description": "container id, to get the scanner for which the container is added,, default value is empty"
+										},
+										{
+											"key": "is_connected",
+											"value": "false",
+											"description": " if set true only return the container if it is currently connected,, default value is false"
+										},
+										{
+											"key": "scanner serial",
+											"value": "CubeDEV",
+											"description": "the scanner serial number, default value is empty"
+										},
+										{
+											"key": "scanner_type",
+											"value": "CUBE",
+											"description": "type of the scanner, default value is empty"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 16 Sep 2020 13:40:04 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"scannerGuid\": \"e81d9d71-71e0-47dc-819b-b3084e8b3fb7\",\n        \"scannerSerial\": \"CubeDEV\",\n        \"scannerName\": \"CUBE_TEST\",\n        \"scannerType\": \"CUBE\",\n        \"connections\": [\n            \"10.243.100.1\",\n            \"10.243.101.1\"\n        ],\n        \"configured\": true,\n        \"connected\": false\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Fetch a scanner based on the scanner guid",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8777/dp5/remote/v1/scanners/e81d9d71-71e0-47dc-819b-b3084e8b3fb7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8777",
+							"path": [
+								"dp5",
+								"remote",
+								"v1",
+								"scanners",
+								"e81d9d71-71e0-47dc-819b-b3084e8b3fb7"
+							]
+						},
+						"description": "Get a specific scanner detail based on the scanner guid(this guid can be retrieved by getting all available scanners in DP5)"
+					},
+					"response": [
+						{
+							"name": "Fetch a scanner based on the scanner guid",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8777/dp5/remote/v1/scanners/e81d9d71-71e0-47dc-819b-b3084e8b3fb7",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8777",
+									"path": [
+										"dp5",
+										"remote",
+										"v1",
+										"scanners",
+										"e81d9d71-71e0-47dc-819b-b3084e8b3fb7"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 16 Sep 2020 13:42:48 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"scannerGuid\": \"e81d9d71-71e0-47dc-819b-b3084e8b3fb7\",\n    \"scannerSerial\": \"CubeDEV\",\n    \"scannerName\": \"CUBE_TEST\",\n    \"scannerType\": \"CUBE\",\n    \"connections\": [\n        \"10.243.100.1\",\n        \"10.243.101.1\"\n    ],\n    \"configured\": true,\n    \"connected\": false\n}"
+						}
+					]
+				},
+				{
+					"name": "Get the connection status of the scanner",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8777/dp5/remote/v1/scanners/e81d9d71-71e0-47dc-819b-b3084e8b3fb7/connected",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8777",
+							"path": [
+								"dp5",
+								"remote",
+								"v1",
+								"scanners",
+								"e81d9d71-71e0-47dc-819b-b3084e8b3fb7",
+								"connected"
+							]
+						},
+						"description": "Fetch the connection status of scanner, this output true indicates that the configured scanner is currently connected or not"
+					},
+					"response": [
+						{
+							"name": "Get the connection status of the scanner",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8777/dp5/remote/v1/scanners/e81d9d71-71e0-47dc-819b-b3084e8b3fb7/connected",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8777",
+									"path": [
+										"dp5",
+										"remote",
+										"v1",
+										"scanners",
+										"e81d9d71-71e0-47dc-819b-b3084e8b3fb7",
+										"connected"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 16 Sep 2020 13:48:32 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"connected\": \"false\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get all active or connected scanners",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8777/dp5/remote/v1/scanners/search",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8777",
+							"path": [
+								"dp5",
+								"remote",
+								"v1",
+								"scanners",
+								"search"
+							]
+						},
+						"description": "Fetch details of all the scanners that are currently connected"
+					},
+					"response": [
+						{
+							"name": "Get all active or connected scanners",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8777/dp5/remote/v1/scanners/search",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8777",
+									"path": [
+										"dp5",
+										"remote",
+										"v1",
+										"scanners",
+										"search"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 16 Sep 2020 13:50:42 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"scannerGuid\": \"8b4690e6-b367-45c6-a3f6-f855b39783b2\",\n        \"scannerSerial\": \"DevM0006\",\n        \"scannerName\": \"\",\n        \"scannerType\": \"MIRAGE\",\n        \"connections\": [\n            \"10.242.100.1\"\n        ],\n        \"configured\": true,\n        \"connected\": true\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Adding a scanner in DP5, without IP's",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8777/dp5/remote/v1/scanners?scanner_name=MIRAGE_TEST&scanner_serial=MIRAGEDEV006&scanner_type=MIRAGE&scanner_ips=",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8777",
+							"path": [
+								"dp5",
+								"remote",
+								"v1",
+								"scanners"
+							],
+							"query": [
+								{
+									"key": "scanner_name",
+									"value": "MIRAGE_TEST"
+								},
+								{
+									"key": "scanner_serial",
+									"value": "MIRAGEDEV006",
+									"description": "This is the serial provided by Ziath with the device, default is empty in which case the scanner is a generic scanner"
+								},
+								{
+									"key": "scanner_type",
+									"value": "MIRAGE"
+								},
+								{
+									"key": "scanner_ips",
+									"value": "",
+									"description": "the IP on which the scanner is configured, if not provided the default IP for Mirage will be added"
+								}
+							]
+						},
+						"description": "Adding a scanner to DP5 based on the scanner paramaters entered"
+					},
+					"response": [
+						{
+							"name": "Adding a scanner in DP5",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8777/dp5/remote/v1/scanners?scanner_name=MIRAGE_TEST&scanner_serial=MIRAGEDEV006&scanner_type=MIRAGE&scanner_ips=",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8777",
+									"path": [
+										"dp5",
+										"remote",
+										"v1",
+										"scanners"
+									],
+									"query": [
+										{
+											"key": "scanner_name",
+											"value": "MIRAGE_TEST"
+										},
+										{
+											"key": "scanner_serial",
+											"value": "MIRAGEDEV006",
+											"description": "This is the serial provided by Ziath with the device, default is empty in which case the scanner is a generic scanner"
+										},
+										{
+											"key": "scanner_type",
+											"value": "MIRAGE"
+										},
+										{
+											"key": "scanner_ips",
+											"value": "",
+											"description": "the IP on which the scanner is configured, if not provided the default IP for Mirage will be added"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Set-Cookie",
+									"value": "JSESSIONID=F3DCD3EEC26ABDCB99603C5D8F079370; Path=/; HttpOnly"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 16 Sep 2020 13:54:03 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"scannerGuid\": \"f5f9231b-bbdd-4c31-af7e-fa96a8c59f6e\",\n    \"scannerSerial\": \"MIRAGEDEV006\",\n    \"scannerName\": \"MIRAGE_TEST\",\n    \"scannerType\": \"MIRAGE\",\n    \"connections\": [\n        \"10.242.100.1\"\n    ],\n    \"configured\": true,\n    \"connected\": false\n}"
+						}
+					]
+				},
+				{
+					"name": "Adding a scanner in DP5, with IP's",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8777/dp5/remote/v1/scanners?scanner_name=MIRAGETEST1&scanner_serial&scanner_type=MIRAGE&scanner_ips=10.240.100.1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8777",
+							"path": [
+								"dp5",
+								"remote",
+								"v1",
+								"scanners"
+							],
+							"query": [
+								{
+									"key": "scanner_name",
+									"value": "MIRAGETEST1"
+								},
+								{
+									"key": "scanner_serial",
+									"value": ""
+								},
+								{
+									"key": "scanner_type",
+									"value": "MIRAGE"
+								},
+								{
+									"key": "scanner_ips",
+									"value": "10.240.100.1",
+									"description": "MIRAGE only has 1 IP module, for express and cube 2 IP's are required."
+								}
+							]
+						},
+						"description": "Adding a scanner with the scanner parameters provided for a custom IP mentioned"
+					},
+					"response": [
+						{
+							"name": "Adding a scanner in DP5, with IP's",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8777/dp5/remote/v1/scanners?scanner_name=MIRAGETEST1&scanner_serial&scanner_type=MIRAGE&scanner_ips=10.240.100.1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8777",
+									"path": [
+										"dp5",
+										"remote",
+										"v1",
+										"scanners"
+									],
+									"query": [
+										{
+											"key": "scanner_name",
+											"value": "MIRAGETEST1"
+										},
+										{
+											"key": "scanner_serial",
+											"value": null
+										},
+										{
+											"key": "scanner_type",
+											"value": "MIRAGE"
+										},
+										{
+											"key": "scanner_ips",
+											"value": "10.240.100.1",
+											"description": "MIRAGE only has 1 IP module, for express and cube 2 IP's are required."
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 16 Sep 2020 13:56:09 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"scannerGuid\": \"b44e6385-92a9-4c36-8c1a-908da7376fac\",\n    \"scannerSerial\": \"\",\n    \"scannerName\": \"MIRAGETEST1\",\n    \"scannerType\": \"MIRAGE\",\n    \"connections\": [\n        \"10.240.100.1\"\n    ],\n    \"configured\": true,\n    \"connected\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete a scanner in DP5",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8777/dp5/remote/v1/scanners/b44e6385-92a9-4c36-8c1a-908da7376fac",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8777",
+							"path": [
+								"dp5",
+								"remote",
+								"v1",
+								"scanners",
+								"b44e6385-92a9-4c36-8c1a-908da7376fac"
+							]
+						},
+						"description": "Delete a specific scanner based on the scanner guid"
+					},
+					"response": []
+				},
+				{
+					"name": "Get raw image from the scanner",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8777/dp5/remote/v1/scanners/8b4690e6-b367-45c6-a3f6-f855b39783b2/image",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8777",
+							"path": [
+								"dp5",
+								"remote",
+								"v1",
+								"scanners",
+								"8b4690e6-b367-45c6-a3f6-f855b39783b2",
+								"image"
+							]
+						},
+						"description": "Get the raw image from the scanner. This will not decode or get a annotated image but just grab raw image from the scanner."
+					},
+					"response": []
+				}
+			],
+			"description": "All remote calls related to scanner configured or connected or to be added in DP5"
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "1ccacf04-081f-46e1-bebb-6840f3f9252a",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "9db1cab8-21ae-4fa6-9c0f-791c7f7ec238",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
