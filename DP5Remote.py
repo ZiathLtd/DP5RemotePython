@@ -1,10 +1,40 @@
 import json
 import requests
+import websocket 
+from websocket import create_connection
+import stomper
+import threading
 
 '''This class details some baic functions of the DP5 remote API using Python.  There is a swagger page for further documentation
 at http://<host>:<port>/swagger-ui.html.
 
 Note that this uses the external requests module so install that by executing 'pip install reqeusts' before running the code'''
+
+def on_error(self, error):
+        print(error)
+
+def on_close(self, close_status_code, close_msg):
+        print("Closed Connection")
+
+def on_open(self):
+        print("Opened Connection")
+
+def task():
+        while recieve_notification:
+            data = ws.recv()
+            NOTIFICATION_TYPES = ['DEVICE_LEGACY', 'DEVICE_CONNECTED', 'DEVICE_DISCONNECTED',
+			'LINEAR_CONNECTED', 'LINEAR_DISCONNECTED', 'LINEAR_NEW_BARCODE', 'LINEAR_PLUGGED_IN', 'LINEAR_UNPLUGGED',
+			'SCAN_MILESTONE', 'ACTIVATOR_EVENT']
+            try:
+                payloadData = data[data.index("{"):-1]
+                payloadData = json.loads(''+payloadData+'')
+                notificationType = (payloadData['notificationType'])
+                if notificationType in NOTIFICATION_TYPES:
+                    print("Recieved Notification")
+                    print(json.dumps(payloadData, indent = 6, sort_keys=True))
+            except:
+                print("Notification not needed.")
+            
 class DP5Remote:
 
     def __init__(self):
@@ -71,13 +101,28 @@ class DP5Remote:
     def shutdown(self):
         requests.put(self.__constructUrl('system/shutdown'))
 
+
 if __name__ == '__main__':
     
     #Create the dp5Remote object, note that this expects the DP5 service to be running
     #if it is not then execute C:\Program Files\Ziath\DP5\resources\dp5-server\dp5-headless.exe 
     #(assuming you are on English language windows and using a default install location)
     dp5remote = DP5Remote()
-    
+    websocket.enableTrace(False)
+    global ws
+    global recieve_notification 
+    recieve_notification = True
+    ws = websocket.create_connection("ws://localhost:8777/dp5-websocket")
+    ws.send("CONNECT\naccept-version:1.0,1.1,2.0\n\n\x00\n")
+
+    sub = stomper.subscribe("/topic/events", "random-id", ack='auto')
+    ws.send(sub)
+
+    wst = threading.Thread(target=task)
+    wst.daemon = True
+    wst.start()
+   
+       
     #obtain some basic information from the system
     print ('version = ' + str(dp5remote.version))
     print ('status = ' + str(dp5remote.status))
@@ -92,5 +137,9 @@ if __name__ == '__main__':
     print('scanning container with uid of ' + container_uid)
     print('scan result = ' + str(dp5remote.scan_container(container_uid)))
 
+    recieve_notification = False
+
     #close dp5 when finished
     dp5remote.shutdown()
+
+ 
